@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+
+
+.banner-area:before,
+.banner-area:after {
+    position: absolute;
+    content: '';
+    width: 546px;
+    height: 100%;
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.banner-area:before {
+    left: 0;
+    background-image: url(./assets/hero-leaf1.png);
+}
+
+.banner-area:after {
+    right: 0;
+    background-image: url(./assets/hero-leaf2.png);
+}
+
+.categories ul li {
+    transition: all ease .2s;
+}
+
+.categories ul li.active,
+.categories ul li:hover {
+    background-color: #15803d;
+    color: #FFF;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-area:before,
+    .banner-area:after {
+        display: none;
+    }
+}
